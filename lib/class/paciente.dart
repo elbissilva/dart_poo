@@ -1,4 +1,4 @@
-class Paciente{
+abstract class Paciente{
   String _nome = "";
   String _endereco = "";
   String _nomeDaMae = "";
@@ -32,7 +32,6 @@ class Paciente{
   }
   @override
   String toString() {
-    // TODO: implement toString
     return {
       "Nome": _nome,
       "Endereço" : _endereco,
