@@ -29,8 +29,13 @@ class PacienteCC extends Paciente{
   }
   @override
   String toString() {
-    // TODO: implement toString
-    return super.toString();
+    return {
+    "Nome do Paciente": super.getNome(),
+    "Endereço":super.getEndereco(),
+    "Nome da Mãe": super.getNomeDaMae(),
+    "Especialidade":_especialidade,
+    "Cirurgia":_cirurgia
+    }.toString();
   }
 
 
